@@ -1,0 +1,204 @@
+//specoffer
+
+.section-specoffer {
+  &-title {
+    font-size: 40px;
+    padding: 30px;
+    font-weight: 200;
+    background-color: #fff;
+    display: flex;
+    border-bottom: 1px solid #e8e8e8;
+    color: #191919;
+    span {
+      color: #bdbdbd;
+      margin-left: 30px;
+    }
+  }
+  &-offer {
+    display: flex;
+    flex-direction: column;
+    &-wrapper {
+      padding: 15px 30px;
+      padding-bottom: 30px;
+    }
+
+    &-item {
+      display: flex;
+      flex-basis: 100%;
+      justify-content: center;
+      align-items: center;
+      background-color: #fff;
+      height: 340px;
+      margin-bottom: 2px;
+      &__img {
+        width: 50%;
+        display: flex;
+        padding: 30px;
+        justify-content: center;
+      }
+      &__content {
+        height: 340px;
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        &-country {
+        }
+        &-title {
+          font-size: 30px;
+          font-weight: 200;
+        }
+        &-subtitle {
+        }
+        &-price {
+          // @include font-semibold
+          font-weight: 600;
+          font-size: 30px;
+          span {
+            font-weight: 200;
+          }
+        }
+        &-brend {
+        }
+      }
+    }
+  }
+
+  &-services {
+    position: relative;
+    background-color: inherit;
+    div div div a {
+      background-color: inherit;
+      left: 0;
+      bottom: 125px;
+      padding: 0;
+      left: 35px;
+    }
+    &-title,
+    &-subtitle {
+      position: absolute;
+      left: 35px;
+      color: #fff;
+    }
+    &-title {
+      top: 268px;
+      font-size: 40px;
+      font-weight: 400;
+      margin-bottom: 30px;
+    }
+    &-subtitle {
+      top: 334px;
+      font-size: 30px;
+      font-weight: 200;
+    }
+  }
+}
+
+@media (min-width: $screen-md) {
+  .section-specoffer {
+    &-container {
+      display: flex;
+      margin: 0 30px;
+      height: 430px;
+    }
+    &-title {
+      font-size: 24px;
+      padding: 18px 30px;
+    }
+    &-offer {
+      flex-direction: row;
+      &-wrapper {
+        width: 69%;
+        padding: 0px 22px 0px 0;
+        overflow: hidden;
+        background: inherit;
+      }
+      &-item {
+        display: flex;
+        flex-direction: column;
+        height: 368px;
+        border-right: 1px solid #e8e8e8;
+        &:last-child {
+          border-right: none;
+        }
+        &__img {
+          width: 100%;
+          margin-top: 53px;
+          margin-bottom: 0;
+          padding: 0;
+        }
+        &__content {
+          width: 100%;
+          text-align: center;
+          &-title,
+          &-subtitle,
+          &-price {
+            font-size: 16px;
+          }
+          &-title {
+            display: flex;
+            justify-content: center;
+            line-height: 0;
+            font-weight: 200;
+          }
+          &-price {
+            line-height: 0;
+          }
+          &-subtitle {
+            margin-left: 3px;
+          }
+        }
+      }
+    }
+  }
+  .swiper-wrapper {
+    height: 430px;
+  }
+  .swiper-slide {
+    position: relative;
+  }
+  .section-specoffer-services {
+    width: 30%;
+    height: 430px;
+    overflow: hidden;
+    background: inherit;
+    &-title {
+      font-size: 40px;
+      line-height: 0;
+      top: 260px;
+      left: 53px;
+    }
+    &-subtitle {
+      margin-left: 53px;
+      font-size: 16px;
+      font-weight: 200;
+    }
+    a {
+      position: absolute;
+      bottom: 35px;
+      left: 53px;
+      font-size: 16px;
+      font-weight: 200;
+    }
+  }
+  .swiper-paginator {
+    bottom: 85px;
+  }
+}
+
+@media (min-width: $screen-md) and (max-width: $screen-md-max) {
+  .section-specoffer-container {
+    align-items: center;
+    max-width: 1550px;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: $screen-lg) {
+  .section-specoffer-container {
+    align-items: center;
+    max-width: 1550px;
+    margin: 0 auto;
+    overflow: hidden;
+  }
+} //specoffer

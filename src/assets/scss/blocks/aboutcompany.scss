@@ -1,0 +1,62 @@
+//aboutcompany
+
+.section-aboutcompany {
+  &-wrapper {
+    margin: 150px 0 140px 82px;
+  }
+  &__logo {
+    margin-bottom: 60px;
+  }
+  &__title {
+    font-size: 50px;
+  }
+  &__subtitle {
+    font-size: 25px;
+    font-weight: 200;
+    color: $grey-color;
+    margin-bottom: 65px;
+  }
+  &__gk {
+    font-size: 50px;
+  }
+  &__index {
+    font-size: 30px;
+    color: $grey-color;
+    font-weight: 200;
+    margin-bottom: 40px;
+  }
+  &__progress {
+    font-size: 30px;
+    font-weight: 200;
+  }
+  &-desc {
+    margin-bottom: 130px;
+    padding: 0 30px;
+    position: relative;
+    &__title {
+      font-size: 50px;
+      margin-bottom: 55px;
+    }
+    &__text {
+      font-size: 30px;
+      font-weight: 200;
+    }
+    &__textmore {
+      display: none;
+    }
+    &__btn {
+      width: 100px;
+      height: 100px;
+      background: #383838;
+      -webkit-border-radius: 100%;
+      border-radius: 100%;
+      color: #fff;
+      line-height: 95px;
+      text-align: center;
+      cursor: pointer;
+      font-size: 40px;
+      font-weight: 200;
+      margin-top: 50px;
+    }
+  }
+}
