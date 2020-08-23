@@ -1,5 +1,5 @@
 {
-  "name": "stolovay",
+  "name": "webpacktemplate",
   "version": "1.0.0",
   "description": "My template",
   "main": "index.js",
@@ -16,10 +16,10 @@
   "author": "https://github.com/petrov6827",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/petrov6827/stolovay-test.git"
+    "url": "git+https://github.com/petrov6827/webpack-template.git"
   },
   "bugs": {
-    "url": "https://github.com/petrov6827/stolovay-test/issues"
+    "url": "https://github.com/petrov6827/webpack-template/issues"
   },
   "keywords": [
     "webpack",
@@ -36,7 +36,7 @@
     "gh-pages": "^3.1.0",
     "pug": "^3.0.0",
     "pug-loader": "^2.4.0",
-    "vue": "^2.6.12"
+    "vue": "^2.6.11"
   },
   "devDependencies": {
     "@babel/core": "^7.10.5",
@@ -55,7 +55,7 @@
     "style-loader": "^1.2.1",
     "vue-loader": "^15.9.3",
     "vue-style-loader": "^4.1.2",
-    "vue-template-compiler": "^2.6.12",
+    "vue-template-compiler": "^2.6.11",
     "webpack": "^4.44.1",
     "webpack-cli": "^3.3.12",
     "webpack-dev-server": "^3.11.0",
