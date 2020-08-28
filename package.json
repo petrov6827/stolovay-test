@@ -1,9 +1,9 @@
 {
-  "name": "webpacktemplate",
+  "name": "stolovka",
   "version": "1.0.0",
   "description": "My template",
   "main": "index.js",
-  "homepage": "https://petrov6827.github.io/stolovay",
+  "homepage": "https://petrov6827.github.io/stolovay-test",
   "scripts": {
     "dev": "webpack-dev-server --open --config ./build/webpack.dev.conf.js",
     "build": "webpack --config ./build/webpack.build.conf.js",
@@ -16,10 +16,10 @@
   "author": "https://github.com/petrov6827",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/petrov6827/webpack-template.git"
+    "url": "git+https://github.com/petrov6827/stolovay-test.git"
   },
   "bugs": {
-    "url": "https://github.com/petrov6827/webpack-template/issues"
+    "url": "https://github.com/petrov6827/stolovay-test/issues"
   },
   "keywords": [
     "webpack",
