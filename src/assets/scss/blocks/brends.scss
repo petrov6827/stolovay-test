@@ -30,7 +30,8 @@
 
 @media (min-width: $screen-md) {
   .section-brends {
-    padding: 20px 0;
+    padding: 0;
+    margin-bottom: 20px;
     &-wrapper {
       @media screen and (max-width: $screen-md-max) {
         margin: 0 30px;
@@ -45,9 +46,10 @@
       li {
         width: 260px;
         height: 100px;
-        &:first-child {
+        &:last-child {
           a {
             border: none;
+            font-size: 18px;
           }
         }
         &:last-child {
@@ -58,8 +60,12 @@
           border-left: none;
         }
         a {
-          border-left: 2px solid #f1f1f1;
+          border-right: 2px solid #f1f1f1;
           padding: 10px 30px;
+          &:hover {
+            opacity: 0.6;
+            transition: 0.2s;
+          }
         }
       }
     }

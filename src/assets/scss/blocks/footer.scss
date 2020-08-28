@@ -5,6 +5,9 @@
     padding: 50px 0 45px 0;
     background-color: #282828;
     font-weight: 200;
+    &-desktop {
+      display: none;
+    }
     input {
       z-index: 10;
       padding: 33px 0;
@@ -23,7 +26,6 @@
       justify-content: space-between;
       border-bottom: 1px solid #4b4b4b;
       padding: 26px 0;
-
       &-plus {
         text-align: right;
         color: white;
@@ -93,3 +95,108 @@
   }
 }
 //fotter
+
+@media (min-width: $screen-md) {
+  .section-footer-menu {
+    padding: 0;
+    padding-top: 100px;
+    &-container {
+      margin: 0 auto;
+    }
+  }
+  .section-footer-menu-desktop {
+    display: flex;
+    background-color: #282828;
+    height: 480px;
+    padding: 0;
+    justify-content: center;
+    &__list {
+      display: flex;
+      justify-content: space-between;
+      width: 1410px;
+      &-item {
+        padding-bottom: 80px;
+        &__title {
+          color: $grey-color;
+          width: 100%;
+          text-align: left;
+          display: flex;
+          justify-content: space-between;
+          font-size: 24px;
+          font-weight: 200;
+          margin-bottom: 30px;
+        }
+        &__content {
+          font-size: 16px;
+          font-weight: 200;
+          li {
+            color: white;
+            border-bottom: none;
+            margin-bottom: 5px;
+            a {
+              color: white;
+              background-color: #282828;
+              border-bottom: none;
+              &:hover {
+                color: $orange-color;
+              }
+            }
+          }
+          &-contacts li {
+            margin-bottom: 15px;
+          }
+        }
+      }
+    }
+  }
+  .section-footer-company {
+    &-container {
+      display: flex;
+      justify-content: space-between;
+    }
+    background-color: #1f1f1f;
+    padding: 42px 50px 30px;
+    &-name {
+      display: flex;
+      align-items: center;
+      margin-bottom: 30px;
+      &__logo {
+        margin-right: 18px;
+        width: 40px;
+        height: 40px;
+      }
+      &__title {
+        color: #fff;
+        font-size: 24px;
+        line-height: 20px;
+      }
+      &__subtitle {
+        font-weight: 200;
+        color: $grey-color;
+        font-size: 16px;
+      }
+    }
+    &-created {
+      font-size: 18px;
+      color: #fff;
+      font-weight: 200;
+    }
+  }
+}
+
+@media (min-width: $screen-md) and (max-width: $screen-md-max) {
+  .section-footer-menu-desktop-container,
+  .section-footer-company-container {
+    margin: 0 30px;
+    max-width: 1400px;
+    padding: 0;
+  }
+}
+
+@media (min-width: $screen-md-max) {
+  .section-footer-menu-desktop-container,
+  .section-footer-company-container {
+    max-width: 1420px;
+    margin: 0 auto;
+  }
+}
