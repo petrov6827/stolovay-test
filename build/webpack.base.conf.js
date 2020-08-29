@@ -6,7 +6,6 @@ const fs = require('fs')
 const MiniCssExtractPlugin = require('mini-css-extract-plugin')
 const CopyWebpackPlugin = require('copy-webpack-plugin')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
-const { VueLoaderPlugin } = require('vue-loader')
 
 // Main const
 const PATHS = {
@@ -32,7 +31,7 @@ module.exports = {
   },
   output: {
     filename: `${PATHS.assets}js/[name].[contenthash].js`,
-    path: PATHS.dist,
+    path: '/',
     /*
       publicPath: '/' - relative path for dist folder (js,css etc)
       publicPath: './' (dot before /) - absolute path for dist folder (js,css etc)
@@ -58,16 +57,6 @@ module.exports = {
         test: /\.js$/,
         loader: 'babel-loader',
         exclude: '/node_modules/'
-      },
-      {
-        // Vue
-        test: /\.vue$/,
-        loader: 'vue-loader',
-        options: {
-          loader: {
-            scss: 'vue-style-loader!css-loader!sass-loader'
-          }
-        }
       },
       {
         // Fonts
@@ -138,7 +127,7 @@ module.exports = {
   },
   plugins: [
     // Vue loader
-    new VueLoaderPlugin(),
+    
     new MiniCssExtractPlugin({
       filename: `${PATHS.assets}css/[name].[contenthash].css`
     }),
