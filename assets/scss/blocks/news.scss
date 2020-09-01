@@ -1,0 +1,109 @@
+.section-news {
+  display: none;
+}
+
+@media (min-width: $screen-md) {
+  .section-news {
+    display: block;
+    margin-top: 173px;
+    min-height: 170px;
+    &-header {
+      font-size: 40px;
+      margin-bottom: 37px;
+    }
+    &-content {
+      display: flex;
+      justify-content: space-between;
+    }
+    &-big {
+      width: 34%;
+      margin-bottom: 30px;
+      &__img {
+        margin-bottom: 30px;
+      }
+    }
+    &__info {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 10px;
+      a {
+        color: #34a853;
+        font-size: 16px;
+        font-weight: 200;
+      }
+      p {
+        color: $grey-color;
+        font-size: 16px;
+        font-weight: 200;
+      }
+    }
+    &__header {
+      font-size: 24px;
+      margin-bottom: 20px;
+    }
+    &__text {
+      font-size: 16px;
+      font-weight: 200;
+      &-small {
+        overflow: hidden;
+        display: -moz-box;
+        display: -webkit-box;
+        -moz-box-orient: vertical;
+        -webkit-line-clamp: 3;
+        -webkit-box-orient: vertical;
+        line-clamp: 3;
+        box-orient: vertical;
+      }
+    }
+    &-small {
+      width: 58%;
+      flex-direction: column;
+
+      &__item {
+        display: flex;
+        margin-bottom: 42px;
+        justify-content: space-evenly;
+        max-height: 170px;
+        text-overflow: ellipsis;
+        // overflow: hidden;
+        -webkit-line-clamp: 2;
+        &-img {
+          margin-right: 20px;
+          min-width: 190px;
+          img {
+          }
+        }
+      }
+    }
+    &-morenews {
+      font-size: 16px;
+      padding: 8px 30px;
+      border: 2px solid #282828;
+      border-radius: 20px;
+      &:hover {
+        background: #faad3d;
+        color: white;
+        transition: 0.2s;
+        font-weight: 400;
+        border: 2px solid #f3f1f1;
+      }
+    }
+  }
+}
+
+@media (min-width: $screen-md) and (max-width: $screen-md-max) {
+  .section-news-container {
+    margin: 0 30px;
+    max-width: 1420px;
+  }
+  .section-news__header {
+    font-size: 16px;
+  }
+}
+
+@media (min-width: $screen-md-max) {
+  .section-news-container {
+    max-width: 1420px;
+    margin: 0 auto;
+  }
+}

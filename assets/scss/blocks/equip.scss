@@ -1,0 +1,50 @@
+//eq
+
+.section-equipment-desktop {
+  background: white;
+  box-shadow: 0 10px 10px #dfdddd;
+  overflow: hidden;
+  display: none;
+  margin-bottom: 20px;
+}
+
+@media screen and (min-width: $screen-md) {
+  .section-equipment-desktop-container {
+    align-items: center;
+    max-width: 1550px;
+    margin: 0 auto;
+  }
+
+  .section-equipment-desktop {
+    display: block;
+
+    ul {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      @media screen and (max-width: $screen-md-max) {
+        margin: 0 30px;
+      }
+    }
+
+    li a {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      font-size: 16px;
+      color: #373737;
+      white-space: nowrap;
+      margin: 10px 0;
+      &:hover {
+        opacity: 0.5;
+        transition: 0.2s;
+      }
+    }
+  }
+}
+
+@media (min-width: $screen-lg) {
+}
+
+//eq
