@@ -37,12 +37,24 @@
       font-size: 50px;
       margin-bottom: 55px;
     }
+    &__subtitle {
+      font-size: 40px;
+      margin-bottom: 15px;
+    }
     &__text {
       font-size: 30px;
       font-weight: 200;
     }
     &__textmore {
       display: none;
+    }
+    &__desktop {
+      display: none;
+      &--active {
+        margin-top: 40px;
+        transition: 0.5s;
+        display: block;
+      }
     }
     &__btn {
       width: 100px;
@@ -57,6 +69,11 @@
       font-size: 40px;
       font-weight: 200;
       margin-top: 50px;
+      outline: none;
+      &--active {
+        transform: rotate(45deg);
+        transition: 0.5s;;
+      }
     }
   }
 }
@@ -109,6 +126,7 @@
         font-weight: 200;
         margin-bottom: 30px;
         color: #282828;
+        
       }
       &__textmore {
         display: none;
@@ -140,6 +158,12 @@
         }
       }
     }
+  }
+}
+
+@media (max-width: 670px) {
+  .section-aboutcompany-container {
+    zoom: 0.5;
   }
 }
 

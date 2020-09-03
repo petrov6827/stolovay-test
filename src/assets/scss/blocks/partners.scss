@@ -37,6 +37,12 @@
   }
 }
 
+@media (max-width: 670px) {
+  .section-partners-wrapper {
+    zoom: 0.8;
+  }
+}
+
 @media (min-width: $screen-md) {
   .section-partners {
     &-container {

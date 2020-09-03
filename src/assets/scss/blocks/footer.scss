@@ -96,6 +96,14 @@
 }
 //fotter
 
+@media (max-width: 670px) {
+  .section-footer-company-name__title,
+  .section-footer-company-name__subtitle,
+  .section-footer-company-created {
+    zoom: 0.6;
+  }
+}
+
 @media (min-width: $screen-md) {
   .section-footer-menu {
     padding: 0;

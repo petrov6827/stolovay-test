@@ -115,21 +115,27 @@
 }
 
 
+@media (max-width: 670px) {
+  .section-specprice-wrapper {
+    padding-left: 30px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+}
+
 //specprice
 @media (max-width: $screen-md) {
-.section-tagretoffer {
-    display: none;
+  .section-tagretoffer {
+      display: none;
+    }
+  .section-portfolio {
+    height: auto;
   }
-.section-portfolio {
-  height: auto;
-}
 }
 
 @media (min-width: $screen-md) {
   .section-main {
-    display: flex;
-    justify-content: center;
-    margin: 0 30px;
+    display: block;
     &-container {
       display: flex;
       justify-content: center;
@@ -142,51 +148,13 @@
     width: 58%;
     margin: 0 20px;
   }
-  .section-targetoffer {
-    display: flex;
-  }
-  .section-targetoffer,
-  .section-specprice {
-    min-width: 19%;
-    padding: 0;
-    height: 475px;
-  }
-  .section-specprice {
-    &-wrapper {
-      padding-left: 27px;
-      padding-bottom: 50px;
-      padding-right: 60px;
-      padding-top: 219px;
-    }
-    &-img {
-      margin-bottom: 18px;
-    }
-    &-subtitle {
-      font-size: 18px;
-      font-weight: 200;
-      color: #191919;
-      line-height: 10px;
-    }
-    &-title {
-      font-size: 40px;
-      color: #191919;
-      margin-bottom: 8px;
-    }
-    &-catalog {
-      font-size: 18px;
-      font-weight: 200;
-      color: #faad3d;
-      &:hover {
-        opacity: 0.5;
-        transition: 0.2s;
-      }
-    }
-  }
 
   //targetoffer
   .section-targetoffer {
     background-color: #fff;
     overflow: hidden;
+    display: flex;
+    flex-basis: 19%;
     &__title {
       font-size: 24px;
       color: #faad3d;
@@ -222,19 +190,59 @@
     }
   }
   //targetoffer
+
+  .section-targetoffer,
+  .section-specprice {
+    padding: 0;
+    height: 475px;
+    width: 19%;
+  }
+  .section-specprice {
+    &-wrapper {
+      padding-left: 27px;
+      padding-bottom: 50px;
+      padding-right: 60px;
+      padding-top: 219px;
+    }
+    &-img {
+      margin-bottom: 18px;
+    }
+    &-subtitle {
+      font-size: 18px;
+      font-weight: 200;
+      color: #191919;
+      line-height: 10px;
+    }
+    &-title {
+      font-size: 40px;
+      color: #191919;
+      margin-bottom: 8px;
+    }
+    &-catalog {
+      font-size: 18px;
+      font-weight: 200;
+      color: #faad3d;
+      &:hover {
+        opacity: 0.5;
+        transition: 0.2s;
+      }
+    }
+  }
 }
 
 @media (min-width: $screen-md) and (max-width: $screen-md-max) {
   .section-main {
-    display: flex;
+    display: block;
     justify-content: space-between;
     margin: 0 30px;
   }
   .section-main-container {
     display: flex;
     justify-content: center;
+    align-items: center;
     margin-bottom: 20px;
     max-width: 1550px;
+    overflow: hidden;
   }
 }
 
@@ -247,7 +255,8 @@
   .section-main-container {
     display: flex;
     justify-content: center;
-    margin: 0 auto;
+    align-items: center;
+    margin: 0 20px;
     max-width: 1550px;
     margin-bottom: 20px;
   }

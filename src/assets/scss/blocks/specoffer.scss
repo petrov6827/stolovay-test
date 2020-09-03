@@ -130,7 +130,7 @@
       margin-bottom: 20px;
     }
     &-title {
-      font-size: 24px;
+      font-size: 40px;
       padding: 15px 30px;
       &:hover {
         color: $orange-color;
@@ -217,6 +217,37 @@
   .swiper-button-prev,
   .swiper-button-next {
     display: none;
+  }
+}
+
+@media (max-width: 670px) {
+  .section-specoffer-title {
+    font-size: 25px;
+  }
+  .section-specoffer-offer-item {
+    max-height: 270px;
+  }
+  .section-specoffer-offer-item__content {
+    justify-content: center;
+    &-country,
+    &-title,
+    &-subtitle,
+    &-price {
+      font-size: 20px;
+      word-break: break-all;
+      margin-bottom: 10px;
+    }
+  }
+  .section-specoffer-services div div div a {
+    font-size: 25px;
+  }
+  .section-specoffer-services-title {
+    font-size: 30px;
+    margin-bottom: 10px;
+  }
+  .section-specoffer-services-subtitle {
+    font-size: 20px;
+    top: 310px;
   }
 }
 

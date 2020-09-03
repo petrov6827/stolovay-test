@@ -2,12 +2,12 @@
   "name": "stolovka",
   "version": "1.0.0",
   "description": "My template",
-  "main": "index.js",
+  "private": true,
   "homepage": "https://petrov6827.github.io/stolovay-test",
   "scripts": {
     "dev": "webpack-dev-server --open --config ./build/webpack.dev.conf.js",
     "build": "webpack --config ./build/webpack.build.conf.js",
-    "deploy": "gh-pages -d dist",
+    "deploy": "gh-pages -d src/static",
     "watch": "webpack --watch"
   },
   "browserslist": [
@@ -56,6 +56,7 @@
     "webpack": "^4.44.1",
     "webpack-cli": "^3.3.12",
     "webpack-dev-server": "^3.11.0",
-    "webpack-merge": "^5.1.3"
+    "webpack-merge": "^5.1.3",
+    "xml-loader": "^1.2.1"
   }
 }

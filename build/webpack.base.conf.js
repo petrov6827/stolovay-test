@@ -31,7 +31,7 @@ module.exports = {
   },
   output: {
     filename: `${PATHS.assets}js/[name].[contenthash].js`,
-    path: '/',
+    path: `${PATHS.src}/static`,
     /*
       publicPath: '/' - relative path for dist folder (js,css etc)
       publicPath: './' (dot before /) - absolute path for dist folder (js,css etc)
@@ -85,36 +85,15 @@ module.exports = {
             options: { sourceMap: true }
           },
           {
-            loader: 'postcss-loader',
-            options: {
-              sourceMap: true,
-              config: { path: `./postcss.config.js` }
-            }
-          },
-          {
             loader: 'sass-loader',
             options: { sourceMap: true }
           }
         ]
       },
       {
-        // css
-        test: /\.css$/,
-        use: [
-          'style-loader',
-          MiniCssExtractPlugin.loader,
-          {
-            loader: 'css-loader',
-            options: { sourceMap: true }
-          },
-          {
-            loader: 'postcss-loader',
-            options: {
-              sourceMap: true,
-              config: { path: `./postcss.config.js` }
-            }
-          }
-        ]
+        // xml
+        test: /\.xml$/,
+        use: ['xml-loader']
       }
     ]
   },
@@ -122,12 +101,10 @@ module.exports = {
     alias: {
       '~': PATHS.src, // Example: import Dog from "~/assets/img/dog.jpg"
       '@': `${PATHS.src}/js`, // Example: import Sort from "@/utils/sort.js"
-      vue$: 'vue/dist/vue.js'
     }
   },
   plugins: [
-    // Vue loader
-    
+
     new MiniCssExtractPlugin({
       filename: `${PATHS.assets}css/[name].[contenthash].css`
     }),
@@ -146,7 +123,7 @@ module.exports = {
         // Static (copy to '/'):
         {
           from: `${PATHS.src}/static`,
-          to: ''
+          to: '../../dist/'
         }
       ]
     }),
@@ -162,7 +139,8 @@ module.exports = {
       page =>
         new HtmlWebpackPlugin({
           template: `${PAGES_DIR}/${page}`,
-          filename: `./${page}`
+          filename: `./${page}`,
+          minify: false
         })
     )
   ]
