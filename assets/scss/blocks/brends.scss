@@ -23,6 +23,12 @@
         &:active {
           color: #fda11c;
         }
+        &:last-child {
+          font-size: 25px;
+        }
+        a {
+          padding: 0 40px;
+        }
       }
     }
   }

@@ -336,7 +336,11 @@
     }
   }
 }
-
+@media (max-width: 670px) {
+  .section-recommend-container {
+    zoom: 0.5;
+  }
+}
 @media (min-width: $screen-md) and (max-width: $screen-md-max) {
   .section-recommend-container {
     margin: 0 30px;

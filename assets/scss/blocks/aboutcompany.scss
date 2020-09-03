@@ -37,11 +37,17 @@
       font-size: 50px;
       margin-bottom: 55px;
     }
+    &__subtitle {
+      font-size: 40px;
+    }
     &__text {
       font-size: 30px;
       font-weight: 200;
     }
     &__textmore {
+      display: none;
+    }
+    &__desktop {
       display: none;
     }
     &__btn {
@@ -140,6 +146,12 @@
         }
       }
     }
+  }
+}
+
+@media (max-width: 670px) {
+  .section-aboutcompany-container {
+    zoom: 0.5;
   }
 }
 

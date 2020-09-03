@@ -7,6 +7,7 @@ mail.addEventListener('click', () => {
 
 
 copyblock.addEventListener('click', () => {
+  
   copyblock.classList.remove('mail-copy-active');
 })
 
