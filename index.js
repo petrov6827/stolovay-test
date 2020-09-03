@@ -1,5 +1,0 @@
-import './js/'
-import './assets/scss/main.scss'
-import './js/swiper'
-import './js/mail'
-import './js/callback'
