@@ -1,20 +1,11 @@
 .swiper-container {
   width: 100%;
-  height: 557px;
   margin-top: 0;
-  @media (min-width: $screen-md) {
-    height: 475px;
-    // top: 40px;
-    background-color: #282828;
-  }
 }
 
 .swiper-wrapper {
-  height: 557px;
+  // height: 557px;
   box-sizing: content-box;
-  @media (min-width: $screen-md) {
-    height: 475px;
-  }
 }
 
 :root {
@@ -30,10 +21,10 @@
   box-sizing: content-box;
   a {
     position: absolute;
-    left: 40px;
-    bottom: 135px;
+    left: 30px;
+    bottom: 125px;
     font-size: 30px;
-    padding: 5px 35px;
+    padding: 5px 30px;
     border-radius: 30px;
     color: #fff;
     background-color: #fda11c;
@@ -85,6 +76,37 @@
     bottom: 33px;
   }
 }
+
+.swiper-pagination-bullet {
+  width: 15px;
+    height: 15px;
+  --bullet-background: #37469B;
+  padding: 2px;
+  border: 0.2 px solid white;
+}
+
+.swiper-pagination-bullet-active {
+    width: 15px;
+    height: 15px;
+   --bullet-background: transparent;
+}
+
+@media (min-width: $screen-md) {
+  // .swiper-wrapper-porftolio {
+  //   height: 475px;
+  // }
+  // .swiper-wrapper-specoffer {
+  //   height: 430px;
+  // }
+  .swiper-slide {
+    a {
+      left: 70px;
+      bottom: 118px;
+      font-size: 16px;
+      padding: 5px 20px;
+    }
+  }
+}
 //           slider!!!!!!!!!!
 
 //specprice
@@ -114,7 +136,6 @@
   }
 }
 
-
 @media (max-width: 670px) {
   .section-specprice-wrapper {
     padding-left: 30px;
@@ -126,10 +147,10 @@
 //specprice
 @media (max-width: $screen-md) {
   .section-tagretoffer {
-      display: none;
-    }
+    display: none;
+  }
   .section-portfolio {
-    height: auto;
+    overflow: hidden;
   }
 }
 
@@ -142,6 +163,7 @@
       max-width: 1550px;
       margin: 0 auto;
       margin-bottom: 20px;
+      height: 475px;
     }
   }
   .section-portfolio {
@@ -249,14 +271,13 @@
 @media (min-width: $screen-lg) {
   .section-main {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     margin: 0 auto;
   }
   .section-main-container {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 0 20px;
     max-width: 1550px;
     margin-bottom: 20px;
   }

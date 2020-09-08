@@ -42,14 +42,12 @@
         display: flex;
         flex-direction: column;
         justify-content: space-evenly;
-        &-country {
-        }
+
         &-title {
           font-size: 30px;
           font-weight: 200;
         }
-        &-subtitle {
-        }
+
         &-price {
           // @include font-semibold
           font-weight: 600;
@@ -57,8 +55,6 @@
           span {
             font-weight: 200;
           }
-        }
-        &-brend {
         }
       }
     }
@@ -81,14 +77,16 @@
       color: #fff;
     }
     &-title {
-      top: 268px;
+      top: 260px;
       font-size: 40px;
       font-weight: 400;
       margin-bottom: 30px;
+      left: 53px;
     }
     &-subtitle {
-      top: 334px;
-      font-size: 30px;
+      left: 53px;
+      top: 307px;
+      font-size: 16px;
       font-weight: 200;
     }
   }
@@ -98,7 +96,6 @@
   .section-specoffer {
     &-services {
       div div div a {
-        background-color: inherit;
         left: 0;
         padding: 0;
         left: 53px;
@@ -109,10 +106,6 @@
           font-weight: 400;
           transition: 0.2s;
         }
-      }
-      &-title {
-        top: 260px;
-        left: 53px;
       }
       &-subtitle {
         left: 53px;
@@ -128,10 +121,15 @@
       justify-content: space-between;
       margin: 0 auto;
       margin-bottom: 20px;
+      height: 430px;
+      overflow: hidden;
     }
     &-title {
-      font-size: 40px;
       padding: 15px 30px;
+      top: 260px;
+      left: 53px;
+      font-size: 24px;
+      font-weight: 200;
       &:hover {
         color: $orange-color;
         transition: 0.2s;
@@ -145,7 +143,7 @@
       flex-direction: row;
       &-wrapper {
         width: 69%;
-        padding: 0px 22px 0px 0;
+        padding: 0px 0 0px 0;
         overflow: hidden;
         background: inherit;
       }
@@ -185,26 +183,23 @@
             font-size: 16px;
             margin-bottom: 10px;
           }
-          &-brend {
-          }
         }
       }
     }
   }
+  // .swiper-wrapper {
+  //   height: 475px;
+  // }
   .swiper-container-specoffer {
-    height: 475px;
+    height: 430px;
     width: 455px;
     margin-bottom: 20px;
-  }
-  .swiper-wrapper {
-    height: 475px;
   }
   .swiper-slide {
     position: relative;
   }
   .section-specoffer-services {
     width: 30%;
-    height: 430px;
     overflow: hidden;
     background: inherit;
   }
@@ -261,9 +256,12 @@
 
 @media (min-width: $screen-lg) {
   .section-specoffer-container {
-    align-items: center;
+    display: flex;
     max-width: 1550px;
+    align-items: center;
+    justify-content: space-between;
     margin: 0 auto;
+    height: 430px;
     overflow: hidden;
   }
 }

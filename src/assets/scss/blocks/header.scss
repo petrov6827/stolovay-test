@@ -55,7 +55,7 @@
       zoom: 0.5;
     }
   }
-  
+
   .dropdown__menu {
     z-index: 12;
     overflow: hidden;
@@ -283,7 +283,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    max-width: 1540px;
+    max-width: 1550px;
     margin: 0 auto;
     @media screen and (max-width: $screen-md-max) {
       margin: 0 30px;
@@ -308,6 +308,9 @@
         }
       }
       &__title {
+        font-size: 30px;
+        margin-top: 11px;
+        margin-right: 63px;
         @media screen and (max-width: $screen-md-max) {
           font-size: 25px;
         }
@@ -315,7 +318,7 @@
     }
     &-search {
       display: flex;
-      width: 50%;
+      width: 58%;
       border-radius: 3px;
       overflow: hidden;
       @media screen and (max-width: $screen-md-max) {

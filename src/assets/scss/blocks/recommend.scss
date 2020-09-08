@@ -234,7 +234,8 @@
     &-bottom {
       display: flex;
       justify-content: space-between;
-      min-height: 745px;
+      max-height: 745px;
+      overflow: hidden;
       &__left {
         display: flex;
         position: relative;
@@ -272,11 +273,12 @@
         display: flex;
         position: relative;
         flex-direction: column;
-        justify-content: space-between;
-        height: 475px;
+        // justify-content: space-between;
+        
+        overflow: hidden;
         &-item1 {
           position: relative;
-          margin-bottom: 12px;
+          margin-bottom: 8px;
         }
         &-dark {
           &-img {
